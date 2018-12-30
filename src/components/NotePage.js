@@ -5,6 +5,7 @@ import FullScreenSpinner from './FullScreenSpinner';
 import NotePageHeader from './NotePageHeader';
 import { fetchNote, saveNote, deleteNote } from '../actions'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types';
 
 const NoteWrapper = styled.section`
   display: grid;
@@ -145,6 +146,17 @@ const mapDispatchToProps = dispatch => {
     saveNote: (note) => dispatch(saveNote(note)),
     deleteNote: (note) => dispatch(deleteNote(note))
   }
+};
+
+NotePage.propTypes = {
+  note: PropTypes.object,
+  error: PropTypes.boolean,
+  loading: PropTypes.boolean,
+  saving: PropTypes.boolean,
+  fetchNote: PropTypes.func,
+  saveNote: PropTypes.func,
+  deleteNote: PropTypes.func,
+  match: PropTypes.object
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NotePage);

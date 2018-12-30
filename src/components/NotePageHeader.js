@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const TitleWrapper = styled.section`
   display: grid;
@@ -72,6 +73,14 @@ class NotePageHeader extends Component {
       </TitleWrapper>
     );
   }
+}
+
+NotePageHeader.propTypes = {
+  title: PropTypes.string,
+  showEditor: PropTypes.boolean,
+  clickEdit: PropTypes.func,
+  clickDelete: PropTypes.func,
+  updateTitle: PropTypes.func
 }
 
 export default NotePageHeader;

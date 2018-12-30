@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class ListNote extends Component {
   render() {
@@ -10,5 +11,9 @@ class ListNote extends Component {
     )
   }
 }
+
+ListNote.propTypes = {
+  note: PropTypes.object
+};
 
 export default ListNote;

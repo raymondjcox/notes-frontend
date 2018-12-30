@@ -33,6 +33,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "eslint": "^5.11.1",
+    "eslint-plugin-react": "^7.12.0"
   }
 }

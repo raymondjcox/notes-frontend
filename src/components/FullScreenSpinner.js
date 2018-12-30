@@ -7,7 +7,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
-`
+`;
 
 class FullScreenSpinner extends Component {
   render() {

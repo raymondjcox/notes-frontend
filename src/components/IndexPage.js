@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
-import ListNote from './ListNote'
-import styled from 'styled-components'
-import FullScreenSpinner from './FullScreenSpinner'
-import { connect } from 'react-redux'
-import { fetchNotes, createNote } from '../actions'
-import moment from 'moment'
+import React, { Component } from 'react';
+import ListNote from './ListNote';
+import styled from 'styled-components';
+import FullScreenSpinner from './FullScreenSpinner';
+import { connect } from 'react-redux';
+import { fetchNotes, createNote } from '../actions';
+import moment from 'moment';
+import PropTypes from 'prop-types';
 
 const ListWrapper = styled.section`
   display: grid;
@@ -72,14 +73,9 @@ class IndexPage extends Component {
   }
 
   newNote() {
-    let date = new Date();
-    let month = date.getMonth() + 1;
-    let day = date.getDate();
-    let year = date.getFullYear();
-    let formattedDate = `${year}-${month}-${day}`;
     return {
       content: '',
-      title: formattedDate
+      title: moment().format('YYYY-MM-DD')
     }
   }
 }
@@ -97,6 +93,14 @@ const mapDispatchToProps = dispatch => {
     fetchNotes: () => dispatch(fetchNotes()),
     createNote: (note) => dispatch(createNote(note))
   }
+};
+
+IndexPage.propTypes = {
+  notes: PropTypes.array,
+  error: PropTypes.boolean,
+  loading: PropTypes.boolean,
+  fetchNotes: PropTypes.func,
+  createNote: PropTypes.func,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(IndexPage)
