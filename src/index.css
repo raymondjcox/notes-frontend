@@ -1,3 +1,19 @@
+:root {
+  --white-color: #ccc;
+  --black-color: #333;
+  --light-blue-color: #80C9CB;
+  --blue-color: #334555;
+  --dark-blue-color: #263441;
+  --red-color: #ff5f5f;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +22,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+h1, h2, h3, h4, h5, header {
+  color: var(--light-blue-color);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+code {
+  color: var(--red-color);
+}
+
+a:hover, button:hover {
+  color: white;
 }
 
 code {
