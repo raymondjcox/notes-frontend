@@ -3,7 +3,7 @@ import ListNote from './ListNote'
 import styled from 'styled-components'
 import FullScreenSpinner from './FullScreenSpinner'
 import { connect } from 'react-redux'
-import { fetchNotes, createNote } from './actions'
+import { fetchNotes, createNote } from '../actions'
 import moment from 'moment'
 
 const ListWrapper = styled.section`

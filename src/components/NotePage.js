@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import FullScreenSpinner from './FullScreenSpinner';
 import NotePageHeader from './NotePageHeader';
-import { fetchNote, saveNote, deleteNote } from './actions'
+import { fetchNote, saveNote, deleteNote } from '../actions'
 import { connect } from 'react-redux'
 
 const NoteWrapper = styled.section`

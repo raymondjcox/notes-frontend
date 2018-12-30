@@ -5,7 +5,7 @@ import NotePage from './NotePage';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import { Switch } from 'react-router';
-import store, { history } from './store';
+import store, { history } from '../store';
 
 class App extends Component {
   render() {
