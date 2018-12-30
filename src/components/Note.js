@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import FullScreenSpinner from './FullScreenSpinner';
-import NotePageHeader from './NotePageHeader';
-import { fetchNote, saveNote, deleteNote } from '../actions'
-import { connect } from 'react-redux'
+import NoteHeader from './NoteHeader';
 import PropTypes from 'prop-types';
 
 const NoteWrapper = styled.section`
@@ -64,7 +62,7 @@ const Editor = styled.textarea`
   outline: none;
 `;
 
-class NotePage extends Component {
+class Note extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -107,7 +105,7 @@ class NotePage extends Component {
     }
     return (
       <Wrapper>
-        <NotePageHeader
+        <NoteHeader
           title={note.title}
           showEditor={showEditor}
           updateTitle={this.handleUpdateTitle}
@@ -127,36 +125,15 @@ class NotePage extends Component {
   }
 }
 
-const mapStateToProps = ({ notes: { loading, error, notes, saving } }, props) => {
-  let { match: { params: { id } } } = props;
-  let note = notes[id];
-  note ? loading = false : note = {};
-
-  return {
-    note,
-    error,
-    loading,
-    saving
-  }
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    fetchNote: (id) => dispatch(fetchNote(id)),
-    saveNote: (note) => dispatch(saveNote(note)),
-    deleteNote: (note) => dispatch(deleteNote(note))
-  }
-};
-
-NotePage.propTypes = {
+Note.propTypes = {
   note: PropTypes.object,
-  error: PropTypes.boolean,
-  loading: PropTypes.boolean,
-  saving: PropTypes.boolean,
+  error: PropTypes.bool,
+  loading: PropTypes.bool,
+  saving: PropTypes.bool,
   fetchNote: PropTypes.func,
   saveNote: PropTypes.func,
   deleteNote: PropTypes.func,
   match: PropTypes.object
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NotePage);
+export default Note;

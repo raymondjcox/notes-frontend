@@ -60,7 +60,7 @@ const Title = styled.input`
   text-align: center;
 `;
 
-class NotePageHeader extends Component {
+class NoteHeader extends Component {
   render() {
     const { title, showEditor, clickEdit, clickDelete, updateTitle } = this.props;
     return (
@@ -75,12 +75,12 @@ class NotePageHeader extends Component {
   }
 }
 
-NotePageHeader.propTypes = {
+NoteHeader.propTypes = {
   title: PropTypes.string,
-  showEditor: PropTypes.boolean,
+  showEditor: PropTypes.bool,
   clickEdit: PropTypes.func,
   clickDelete: PropTypes.func,
   updateTitle: PropTypes.func
 }
 
-export default NotePageHeader;
+export default NoteHeader;

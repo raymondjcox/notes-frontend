@@ -1,4 +1,4 @@
-import { RECEIVE_NOTES, RECEIVE_NOTE, REQUEST_SAVE_NOTE, RECEIVE_SAVE_NOTE, RECEIVE_DELETE_NOTE } from '../actions'
+import * as actions from '../actions'
 
 export default (state, action) => {
   if (state === undefined) {
@@ -11,7 +11,7 @@ export default (state, action) => {
   }
 
   switch (action.type) {
-    case REQUEST_SAVE_NOTE:
+    case actions.REQUEST_SAVE_NOTE:
       return {
         ...state,
         notes: {
@@ -21,25 +21,23 @@ export default (state, action) => {
         saving: true
       };
 
-    case RECEIVE_SAVE_NOTE:
+    case actions.RECEIVE_SAVE_NOTE:
       return {
         ...state,
         saving: false
       };
 
-    case RECEIVE_NOTES:
-      let notes = action.notes.reduce((acc, note) => {
-        acc[note.id] = note;
-        return acc;
-      }, {});
-
+    case actions.RECEIVE_NOTES:
       return {
         ...state,
-        notes,
+        notes: action.notes.reduce((acc, note) => {
+          acc[note.id] = note;
+          return acc;
+        }, {}),
         loading: false
       };
 
-    case RECEIVE_NOTE:
+    case actions.RECEIVE_NOTE:
       return {
         ...state,
         notes: {
@@ -50,7 +48,7 @@ export default (state, action) => {
         saving: false
       };
 
-    case RECEIVE_DELETE_NOTE:
+    case actions.RECEIVE_DELETE_NOTE:
       return {
         ...state,
         notes: {
