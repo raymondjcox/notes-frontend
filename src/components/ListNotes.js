@@ -42,9 +42,7 @@ const Header = styled.header`
 
 class ListNotes extends Component {
   componentDidMount() {
-    if (this.props.notes.length === 0) {
-      this.props.fetchNotes();
-    }
+    this.props.fetchNotes();
   }
 
   render() {

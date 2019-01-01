@@ -52,9 +52,10 @@ export default (state, action) => {
       return {
         ...state,
         notes: {
-          ...Object.keys(state.notes).reduce((acc, note) => {
+          ...Object.keys(state.notes).reduce((acc, noteId) => {
+            let note = state.notes[noteId];
             if (note.id !== action.note.id) {
-              acc[note.id] = note;
+              acc[note.id] = { ...note };
             }
             return acc;
           }, {})

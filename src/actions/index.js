@@ -92,7 +92,10 @@ export function createNote(note) {
       },
       body: JSON.stringify(note)
     }).then(res => res.json())
-      .then((note) => dispatch(push(`/notes/${note.id}`)))
+      .then((note) => {
+        dispatch(receiveNote(note));
+        dispatch(push(`/notes/${note.id}`));
+    });
   };
 }
 
