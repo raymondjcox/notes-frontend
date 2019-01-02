@@ -13,7 +13,7 @@ class App extends Component {
       <Provider store={store}>
 	<ConnectedRouter history={history}>
           <Switch>
-            <Route path='/' exact component={IndexPage} />
+            <Route exact path='/' component={IndexPage} />
             <Route path={`/notes/:id`} component={NotePage} />
           </Switch>
 	</ConnectedRouter>
