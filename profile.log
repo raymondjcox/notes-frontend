@@ -1,0 +1,105 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.013  000.013: --- NVIM STARTING ---
+000.924  000.911: locale set
+001.750  000.826: inits 1
+001.773  000.023: window checked
+002.036  000.263: parsing arguments
+002.500  000.464: expanding arguments
+002.697  000.197: inits 2
+003.434  000.738: init highlight
+010.497  006.580  006.580: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/filetype.vim
+010.698  000.051  000.051: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/ftplugin.vim
+010.836  000.018  000.018: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/filetype.vim
+010.961  000.015  000.015: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/ftplugin.vim
+011.113  000.042  000.042: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/indent.vim
+011.738  000.253  000.253: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/syncolor.vim
+011.855  000.488  000.235: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/synload.vim
+011.888  000.643  000.155: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/syntax.vim
+012.915  000.168  000.168: sourcing /Users/raymondcox/.config/nvim/pack/minpac/opt/minpac/plugin/minpac.vim
+016.002  000.210  000.210: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/syncolor.vim
+017.414  000.207  000.207: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/syncolor.vim
+018.287  000.192  000.192: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/syncolor.vim
+018.839  000.175  000.175: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/syntax/syncolor.vim
+038.422  021.617  021.043: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-colorschemes/colors/triplejelly.vim
+038.454  034.691  005.347: sourcing /Users/raymondcox/.config/nvim/init.vim
+038.462  000.337: sourcing vimrc file(s)
+040.849  000.021  000.021: sourcing /Users/raymondcox/.config/nvim/pack/minpac/opt/minpac/plugin/minpac.vim
+041.756  000.302  000.302: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/gzip.vim
+041.834  000.017  000.017: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/health.vim
+041.958  000.068  000.068: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/man.vim
+042.601  000.586  000.586: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/matchit.vim
+042.840  000.173  000.173: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/matchparen.vim
+043.354  000.450  000.450: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/netrwPlugin.vim
+043.684  000.019  000.019: sourcing /Users/raymondcox/.local/share/nvim/rplugin.vim
+043.693  000.262  000.243: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/rplugin.vim
+043.774  000.018  000.018: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/rrhelper.vim
+043.944  000.107  000.107: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/shada.vim
+044.049  000.031  000.031: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/spellfile.vim
+044.264  000.149  000.149: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/tarPlugin.vim
+044.426  000.096  000.096: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/tohtml.vim
+044.526  000.026  000.026: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/tutor.vim
+044.773  000.179  000.179: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/zipPlugin.vim
+044.782  003.834: loading plugins
+045.485  000.133  000.133: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/ack.vim/plugin/ack.vim
+046.337  000.121  000.121: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/ale/autoload/ale/events.vim
+046.497  000.797  000.676: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/ale/plugin/ale.vim
+048.356  001.630  001.630: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/emmet-vim/plugin/emmet.vim
+049.352  000.765  000.765: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/fzf/plugin/fzf.vim
+049.879  000.230  000.230: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/golden-ratio/plugin/golden_ratio.vim
+050.206  000.097  000.097: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/lightline.vim/plugin/lightline.vim
+054.721  004.299  004.299: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/nerdcommenter/plugin/NERD_commenter.vim
+055.308  000.160  000.160: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/suda.vim/autoload/suda.vim
+055.427  000.450  000.289: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/suda.vim/plugin/suda.vim
+056.075  000.366  000.366: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-endwise/plugin/endwise.vim
+056.600  000.295  000.295: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-fugitive/plugin/fugitive.vim
+056.787  000.042  000.042: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-fugitive/ftdetect/fugitive.vim
+057.027  000.038  000.038: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-markdown/ftdetect/markdown.vim
+057.478  000.057  000.057: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/unmatchit.vim
+057.850  000.019  000.019: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/plugin/matchparen.vim
+058.447  000.240  000.240: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup.vim
+058.728  000.137  000.137: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/perf.vim
+059.561  000.410  000.410: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/loader.vim
+060.192  000.385  000.385: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/matchparen.vim
+061.868  004.625  003.378: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/plugin/matchup.vim
+064.955  002.879  002.879: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-polyglot/ftdetect/polyglot.vim
+065.424  000.218  000.218: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-projectionist/plugin/projectionist.vim
+065.886  000.120  000.120: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-startify/plugin/startify.vim
+066.593  000.482  000.482: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-surround/plugin/surround.vim
+067.478  000.647  000.647: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-table-mode/plugin/table-mode.vim
+068.049  000.148  000.148: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-test/autoload/test.vim
+068.789  001.077  000.929: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-test/plugin/test.vim
+069.226  000.201  000.201: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-tmux-navigator/plugin/tmux_navigator.vim
+069.360  005.190: loading packages
+069.618  000.011  000.011: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/after/plugin/matchit.vim
+069.640  000.268: loading after plugins
+069.649  000.009: inits 3
+074.295  004.646: reading ShaDa
+076.865  002.571: clearing screen
+077.559  000.346  000.346: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/ale/autoload/ale.vim
+078.575  000.520  000.520: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/lightline.vim/autoload/lightline.vim
+082.738  003.574  003.574: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-fugitive/autoload/fugitive.vim
+083.008  000.058  000.058: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/lightline.vim/autoload/lightline/tab.vim
+083.903  000.207  000.207: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme.vim
+085.755  002.292  002.086: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/powerline.vim
+085.764  002.507  000.215: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/default.vim
+089.940  000.040  000.040: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/re.vim
+090.145  006.234: opening buffers
+090.458  000.313: BufEnter autocommands
+090.464  000.005: editing files in windows
+092.937  000.663  000.663: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim
+095.452  000.689  000.689: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-startify/autoload/startify.vim
+096.188  000.541  000.541: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-startify/autoload/startify/fortune.vim
+105.053  000.229  000.229: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-startify/syntax/startify.vim
+106.256  000.540  000.540: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/ale/autoload/ale/util.vim
+110.865  017.739: VimEnter autocommands
+111.341  000.247  000.247: sourcing /usr/local/Cellar/neovim/0.3.1/share/nvim/runtime/autoload/provider/clipboard.vim
+111.350  000.239: before starting main loop
+111.777  000.218  000.218: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/pos.vim
+112.919  000.762  000.762: sourcing /Users/raymondcox/.config/nvim/pack/minpac/start/vim-matchup/autoload/matchup/delim.vim
+118.236  005.906: first screen update
+118.242  000.006: --- NVIM STARTED ---

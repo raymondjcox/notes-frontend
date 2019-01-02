@@ -1,22 +1,8 @@
 import { push, replace } from 'connected-react-router'
 import debounce from 'lodash/debounce';
 
-export const REQUEST_NOTES = 'REQUEST_NOTES';
-function requestNotes() {
-  return {
-    type: REQUEST_NOTES
-  }
-}
-
-export const REQUEST_NOTE = 'REQUEST_NOTE';
-function requestNote() {
-  return {
-    type: REQUEST_NOTE
-  }
-}
-
 export const RECEIVE_NOTES = 'RECEIVE_NOTES';
-function receiveNotes(notes) {
+export function receiveNotes(notes) {
   return {
     type: RECEIVE_NOTES,
     notes,
@@ -25,7 +11,7 @@ function receiveNotes(notes) {
 }
 
 export const RECEIVE_NOTE = 'RECEIVE_NOTE';
-function receiveNote(note) {
+export function receiveNote(note) {
   return {
     type: RECEIVE_NOTE,
     note,
@@ -64,23 +50,11 @@ function receiveDeleteNote(note) {
   }
 }
 
-export function fetchNotes() {
-  return (dispatch) => {
-    dispatch(requestNotes());
-    fetch('/notes/')
-      .then(res => res.json())
-      .then(json => dispatch(receiveNotes(json.notes)))
-  }
-}
+export const FETCH_NOTES = 'FETCH_NOTES';
+export const fetchNotes = () => ({ type: FETCH_NOTES });
 
-export function fetchNote(noteId) {
-  return (dispatch) => {
-    dispatch(requestNote());
-    fetch(`/notes/${noteId}`)
-      .then(res => res.json())
-      .then(json => dispatch(receiveNote(json)))
-  }
-}
+export const FETCH_NOTE = 'FETCH_NOTE';
+export const fetchNote = (noteId) => ({ type: FETCH_NOTE, noteId });
 
 export function createNote(note) {
   return (dispatch) => {
