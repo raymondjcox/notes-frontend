@@ -11,7 +11,7 @@ export default (state, action) => {
   }
 
   switch (action.type) {
-    case actions.REQUEST_SAVE_NOTE:
+    case actions.SAVE_NOTE:
       return {
         ...state,
         notes: {
